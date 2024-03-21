@@ -1,18 +1,18 @@
 document.getElementById("loanForm").addEventListener("click", (event) => {
   event.preventDefault();
 
-  var price = parseFloat(document.getElementById("price").value);
-  var downPayment = parseFloat(document.getElementById("downPayment").value);
-  var loanTerm = parseFloat(document.getElementById("loanTerm").value);
+  let price = parseFloat(document.getElementById("price").value);
+  let downPayment = parseFloat(document.getElementById("downPayment").value);
+  let loanTerm = parseFloat(document.getElementById("loanTerm").value);
 
-  var loanAmount = price - downPayment;
-  var monthlyInterestRate = 0.05 / 12;
-  var months = loanTerm * 12;
-  var monthlyPayment =
+  let loanAmount = price - downPayment;
+  let monthlyInterestRate = 0.05 / 12;
+  let months = loanTerm * 12;
+  let monthlyPayment =
     (loanAmount * monthlyInterestRate) /
     (1 - Math.pow(1 + monthlyInterestRate, -months));
 
-  var resultElement = document.getElementById("result");
+  let resultElement = document.getElementById("result");
   resultElement.innerHTML =
     "<p>Boda Value: " + loanAmount.toFixed(2) + " ksh</p>";
   resultElement.innerHTML +=
