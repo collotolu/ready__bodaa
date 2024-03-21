@@ -12,6 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Application Form</title>
     <link href="css/style.css" rel="stylesheet" />
+    <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
   </head>
   <body>
     <!-- header nav section -->
@@ -27,9 +31,9 @@
           />
         </div>
         <div class="nav__section--lists">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/About.html">About Us</a></li>
-          <li><a href="/contact-us.html">Contact Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
           <li><a href="#">Apply</a></li>
         </div>
         <i class="fa-solid fa-bars"></i>
@@ -58,16 +62,16 @@
       <form id="inputAppllication">
         <div>
           <label>First Name</label>
-          <input type="text" name="First name" id="inputs" />
+          <input type="text" name="firstname" id="firstname" />
           <label>Last Name</label>
-          <input type="text" name="Last name" id="inputs" />
+          <input type="text" name="lastname" id="lastname" />
           <label>National ID</label>
-          <input type="text" name="national id" id="inputs" />
+          <input type="text" name="nationalId" id="nationalId" />
           <label>Phone number</label>
-          <input type="number" name="number" id="input" />
+          <input type="number" name="phone" id="phone" />
         </div>
         <div>
-          <button class="btn" id="button">Apply</button>
+          <button class="btn" id="btn">Apply</button>
         </div>
         <p class="message"></p>
       </form>
