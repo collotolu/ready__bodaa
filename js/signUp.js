@@ -61,4 +61,3 @@ pressButton.addEventListener("click", () => {
   }
   //   console.log(user);
 });
-factors
