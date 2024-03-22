@@ -13,9 +13,9 @@
     <title>Application Form</title>
     <link href="css/style.css" rel="stylesheet" />
     <script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
   </head>
   <body>
     <!-- header nav section -->
@@ -31,10 +31,12 @@
           />
         </div>
         <div class="nav__section--lists">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="About.html">About Us</a></li>
-          <li><a href="contact-us.html">Contact Us</a></li>
-          <li><a href="#">Apply</a></li>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="#">Apply</a></li>
+          </ul>
         </div>
         <i class="fa-solid fa-bars"></i>
       </nav>
@@ -42,6 +44,7 @@
 
     <div class="apply__container">
       <h1>Application Form</h1>
+      <p class="message"></p>
       <form id="loanForm">
         <div>
           <label for="price">Bodaa Price ksh:</label>
@@ -73,10 +76,9 @@
         <div>
           <button class="btn" id="btn">Apply</button>
         </div>
-        <p class="message"></p>
+        
       </form>
     </div>
-
 
     <script src="js/Apply.js"></script>
   </body>
